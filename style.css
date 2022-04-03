@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* height: 100vh; */
+    /* height: 70vh; */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: rgb(158, 171, 231);
+    padding: 1rem; */
+}
+
+.image {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+   
+
+    margin: 0.25rem;
+    border-radius: 10px;
+    border: 3px solid black;
+    /* border: 20px solid black; */
+    padding: 1rem;
+}
+
+.generate-button {
+    background-color: slateblue;
+    color: white;
+    padding: 0.5rem;
+    /* font-size: 1rem; */
+    border-radius: 5px;
+
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.generate-button:active {
+    transform: scale(0.95);
+}
+
+.generate-button:hover {
+    background-color: rgb(224, 85, 85);
+}
+
+@media only screen and (max-width: 597px){
+.image-container {
+    flex-direction: column;
+}
+h1 {
+    font-size: 1.25rem;
+    padding: 1.25rem;
+}
+}
